@@ -1,0 +1,212 @@
+.fp-bg1{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+
+}
+
+.fp-bg1 img{
+    width: 100%;
+}
+
+.fp-logo{
+    position:absolute;
+    top: 0;
+    left: 1vw;
+    height: 30vh;
+    width: 20vw;
+}
+
+.fp-profilelogo{
+    position:absolute;
+    top: 4vh;
+    right: 5vw;
+    height: 5vh;
+    width: 2.5vw;
+}
+
+.fp-belllogo{
+    position:absolute;
+    top: 4vh;
+    right: 10vw;
+    height: 5vh;
+    width: 2.5vw;
+}
+
+/* Container styling */
+.toggle-container {
+    position: absolute;
+    top:18vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    width: 300px;
+    background-color: #000000ad;
+    border-radius: 30px;
+    padding: 5px;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .toggle-button {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+  }
+  
+
+  .toggle-button.active {
+    background-color: #FD9F69;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .co-card {
+    position:absolute;
+    width: 100%;
+    height: 50%;
+    top: 30vh;
+    left:0;
+  }
+  
+
+  .card1 {
+    position: absolute;
+    background-color: yellow;
+    top: 5vh;
+    left: 20vw;
+    height: 40vh;
+    width: 30vw;
+    z-index: 1; /* Default stack level */
+    border-radius: 2rem; 
+  }
+  
+  .card2 {
+    background-color: blue;
+    position: absolute;
+    left: 25vw;
+    top: 0;
+    height: 50vh;
+    width: 50vw;
+    z-index: 2; /* Higher stack level to overlay card1 and card3 */
+    border-radius: 2rem; 
+  }
+  
+  .card3 {
+    background-color: red;
+    position: absolute;
+    top: 5vh;
+    right: 20vw;
+    height: 40vh;
+    width: 30vw;
+    z-index: 1; /* Default stack level */
+    border-radius: 2rem; 
+  }
+  
+  
+
+  .card1 img{
+    height: 40vh;
+    width: 30vw;
+    border-radius: 15px; 
+    border-radius: 2rem; 
+  }
+
+  .card2 img{
+    height: 50vh;
+    width: 50vw;
+    border-radius: 2rem; 
+  }
+
+  .card3 img{
+    height: 40vh;
+    width: 30vw;
+    border-radius: 2rem; 
+  }
+
+  .co-card .card {
+    border: none;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+
+  
+  .co-card .card::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 0.9) 10%, 
+      rgba(0, 0, 0, 0.6) 30%,
+      rgba(0, 0, 0, 0) 100% 
+    );
+    z-index: 1; /* Place the gradient above the image */
+  }
+  
+  .card-title {
+    position: absolute;
+    bottom: 10%; 
+    left: 2vw;
+    color: #fff; 
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    z-index: 2; 
+  }
+  
+  
+
+  
+.navigation-buttons {
+    top: 83vh;
+    left: 45vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.prev-button, .next-button {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+
